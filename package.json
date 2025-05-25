@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "start": "ts-node src/app.ts",
-    "test": "jest"
+    "test": "jest",
+    "setup": "ts-node src/utils/setup.ts"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
@@ -24,6 +25,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "ioredis": "^5.6.1",
     "mongodb-memory-server": "^10.1.4",
     "mongoose": "^8.15.0"
   }
