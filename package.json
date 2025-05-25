@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "start": "ts-node src/app.ts",
-    "test": "jest",
+    "test": "jest --forceExit",
     "setup": "ts-node src/utils/setup.ts",
     "startBuild": "node dist/app.js",
     "build": "tsc"
