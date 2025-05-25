@@ -1,5 +1,6 @@
 import request from 'supertest';
 import app from '../src/app'; // Update with actual path to Express app
+import mongoose from 'mongoose';
 
 describe('My List API', () => {
     it('should add item to list', async () => {
@@ -22,5 +23,8 @@ describe('My List API', () => {
         expect(response.status).toBe(200);
     });
 
-    
+    afterAll(async () => {
+        await mongoose.connection.close();
+    });
+
 });
